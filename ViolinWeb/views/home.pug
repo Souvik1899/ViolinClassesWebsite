@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+   style
+      include ../static/style.css
+block content 
+    
+    section#introSection 
+       div.big Welcome to Souvik's violin classes 
+       div.small Art is how we decorate space; Music is how we decorate time
+
+    section#missionSection 
+      h2 Our Mission
+
+      div.card 
+             h3  Expert Teaching
+             div.card-img
+                    img(src="/static/img/1.jpg")
+             div.card-content
+                    p "The older the violin, the sweeter the music."
+      div.card 
+            h3  Music by heart
+            div.card-img
+                    img(src="/static/img/2.png")
+            div.card-content
+                    p "Happiness is a thing to be practiced,like violin."
+      div.card 
+             h3  24*7 Expert help
+             div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpg")
+                div.card-content
+                    p "Love is not love without a violin."
+    section#sponsorSection
+        h2 Our sponsors  
+        div#sponsors
+          img(src="/static/img/img1.png",alt= "Sponsor Image",class= "spImage")
+          img(src="/static/img/img2.png",alt= "Sponsor Image",class= "spImage")
+          img(src="/static/img/img3.jpg",alt= "Sponsor Image",class= "spImage")
+          img(src="/static/img/img4.png",alt= "Sponsor Image",class= "spImage")
